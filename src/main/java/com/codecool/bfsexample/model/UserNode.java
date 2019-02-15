@@ -20,6 +20,7 @@ public class UserNode {
             inverseJoinColumns=@JoinColumn(name="FriendNode"))
     private Set<UserNode> friends = new HashSet<>();
 
+
     public UserNode() {}
 
     public UserNode(String firstName, String lastName) {
@@ -57,4 +58,7 @@ public class UserNode {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+
+
 }
