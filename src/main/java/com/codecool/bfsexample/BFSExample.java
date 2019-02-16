@@ -50,8 +50,21 @@ public class BFSExample {
 
                 case 2:
                     // print friends of user
+                    System.out.println( "Friend of : Madeline Cedric " + "id : "+search.getIdOf("Madeline","Cedric") );
                     System.out.println(search.friendsToString( search.getFriendsOfman("Madeline","Cedric") ));
+                    System.out.println( "Friend of : Emery Tyler "+ "id : "+search.getIdOf("Emery","Tyler") );
                     System.out.println(search.friendsToString( search.getFriendsOfman("Emery","Tyler") ));
+                    System.out.println( "Friend of : Virginia Abra "+ "id : "+search.getIdOf("Virginia","Abra") );
+                    System.out.println(search.friendsToString( search.getFriendsOfman("Virginia","Abra") ));
+                    System.out.println( "Friend of : Naomi Rajah "+ "id : "+search.getIdOf("Naomi","Rajah") );
+                    System.out.println(search.friendsToString( search.getFriendsOfman("Naomi","Rajah") ));
+                    System.out.println( "Friend of : Tanya Abra "+ "id : "+search.getIdOf("Tanya","Abra") );
+                    System.out.println(search.friendsToString( search.getFriendsOfman("Tanya","Abra") ));
+                    System.out.println("----------------");
+
+                    System.out.println( "Friend of : Jena Bryar "+ "id : "+search.getIdOf("Jena","Bryar") );
+                    System.out.println(search.friendsToString( search.getFriendsOfman("Jena","Bryar") ));
+
                     break;
 
                 case 3:
@@ -63,20 +76,10 @@ public class BFSExample {
                     break;
 
                 case 4:
-                    // check
-                    Boolean result = search.hasPathBFS("Madeline", "Cedric","Emery","Tyler");
-                    Boolean result1 = search.hasPathBFS("Madeline", "Cedric","Tyrone","Myles");
-                    Boolean result2 = search.hasPathBFS("Madeline", "Cedric","Naomi","Lydia");
-                    Boolean result3 = search.hasPathBFS("Madeline", "Cedric","Charissa","Nicholas");
-                    Boolean result4 = search.hasPathBFS("Madeline", "Cedric","Theodore","Abra");
-                    Boolean result5 = search.hasPathBFS("Emery", "Tyler","Olympia","Aurora");
 
-                    System.out.println(result);
-                    System.out.println(result1);
-                    System.out.println(result2);
-                    System.out.println(result3);
-                    System.out.println(result4);
-                    System.out.println(result5);
+                    // check
+                    System.out.println(  search.getPathBFS("Belle", "Aurora","Axel","Tyler") );
+                    System.out.println(  search.getPathBFS("Madeline", "Cedric","Tanya","Abra") );
                     break;
             }
         }
